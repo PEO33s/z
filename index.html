@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      min-height: 100%;
+      background-color: #2a180c;
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+      color: #f5f0e6;
+      text-shadow: 1px 1px 3px rgba(40, 25, 10, 0.7);
+      box-sizing: border-box;
+      overflow-y: auto; /* Enable vertical scrolling */
+    }
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 24px;
+      letter-spacing: 1px;
+      border-bottom: 1px solid rgba(245,240,230,0.2);
+      padding-bottom: 8px;
+      text-align: center;
+    }
+
+    .section {
+      margin-bottom: 28px;
+      padding: 16px;
+      background-color: rgba(245,240,230,0.05);
+      border-radius: 12px;
+      width: 100%;
+      max-width: 720px;
+      box-shadow: 0 0 20px rgba(20, 10, 5, 0.6);
+      backdrop-filter: blur(6px);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    .section h3 {
+      font-size: 20px;
+      margin-bottom: 12px;
+      border-left: 4px solid #c49b6c;
+      padding-left: 12px;
+    }
+
+    .section p {
+      font-size: 16px;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 22px;
+      }
+
+      .section h3 {
+        font-size: 18px;
+      }
+
+      .section p {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <h2>Earthquake Safety</h2>
+
+    <div class="section">
+      <h3>🏠 Indoors</h3>
+      <p>Drop, cover, and hold on. Avoid windows, heavy furniture, and outside walls. Don’t panic, don’t run outside, and don’t use elevators.</p>
+    </div>
+
+    <div class="section">
+      <h3>🌳 Outdoors</h3>
+      <p>Move to an open, safe area away from buildings and power lines.</p>
+    </div>
+
+    <div class="section">
+      <h3>🚗 Driving</h3>
+      <p>Pull over to a clear spot and stay in the car.</p>
+    </div>
+
+    <div class="section">
+      <h3>🆘 Trapped</h3>
+      <p>Don’t light matches. Cover your mouth and tap to signal for help.</p>
+    </div>
+  </div>
+</body>
+</html>
